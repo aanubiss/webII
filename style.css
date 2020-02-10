@@ -1,122 +1,79 @@
-* {
-  box-sizing: border-box;
+body {
+    background-image: url('./img/mBack.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-size: cover;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 0;
+    margin-top: 8px;
+    padding: 0;
+    font-family: 'Capture it', arial;
 }
 
-html, body {
-  width: 100%;
-  height: 100%;
-  padding: 0;
-  margin: 0;
+.megablock {
+    height: 240px;
+    width: 1300px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
 }
-.block-left{
-	width:50%;
-	height:100%;
-	overflow:auto;
-	float:left;
-	background-color: white;
-	cursor: pointer;
-  	transition: all 750ms ease;
+
+.block {
+    height: 80%;
+    width: 210px;
+    background: rgb(226, 54, 54);
+    background: radial-gradient(circle, rgba(226, 54, 54, 1) 0%, rgba(226, 74, 54, 1) 48%, rgba(226, 54, 54, 1) 100%);
+    border: 1px solid goldenrod;
+    border-radius: 10px;
+    transition: 700ms;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
 }
-.block-right{
-	width:50%;
-	height:100%;
-	overflow:auto;
-	background-color: black;
-	cursor: pointer;
- 	transition: all 750ms ease;
+
+.mymenu ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    padding-bottom: 5px;
+    overflow: hidden;
 }
-.block-right:hover{
-	background-color: white;
+
+.mymenu ul li {
+    transition: all 600ms;
+    float: left;
 }
-.block-left:hover{
-	background-color: black;
+
+.mymenu ul li a {
+    display: block;
+    color: white;
+    text-align: center;
+    padding: 20px 16px;
+    text-decoration: none;
 }
-#sideText{
-	font-size: 40px;
-	position: absolute;
-	color: orange;
-	top: 38%;
-	left: 33%;
+
+.mymenu ul li:hover {
+    /* background-color: dimgrey; */
+    border: 2px solid goldenrod;
+    border-radius: 15px;
 }
-#dSideM{
-	width:100%;
-	height:93.5%;
-	overflow:auto;
-	background-color: black;
- 	transition: all 750ms ease;
+
+.block:hover {
+    width: 300px;
+    height: 95%;
+    transform: rotate(360deg);
+    -webkit-box-shadow: inset 0px -85px 150px 0px rgba(0, 0, 0, 0.7);
+    -moz-box-shadow: inset 0px -85px 150px 0px rgba(0, 0, 0, 0.7);
+    box-shadow: inset 0px -85px 150px 0px rgba(0, 0, 0, 0.7);
+    
 }
-#dSideF{
-	width:100%;
-	height:6.5%;
-	overflow:auto;
-	background-color: black;
-	transition: all 750ms ease;
-	margin: 0;
-	padding: 0;
-}
-.equip{
-	text-align: center;
-	font-size: 35px;
-	color: orange;
-}
-ul {
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: black;
-}
-li {
-	float: right;
-	margin: 0;
-	padding: 0;
-	float: right;
-}  
-li a {
-	display: block;
-	color: white;
-	text-align: center;
-	padding: 14px 16px;
-	text-decoration: none;
-  }
-  
-  li a:hover:not(.active) {
-	background-color: gray;
-  }
-  
-  .active {
-	background-color: orange;
-  }
-body {
-	text-align: center;
-  }
-  
-.wrapper {
-	display: flex;
-	justify-content: left;
-	align-items: center;
-	float: left;
-	width: 17%;
-	height: 80%;
-	color: orange;
-  }
-  
-  .wrapper i {
-	padding-left: 10px;
-	padding-right: 7px;
-	text-shadow: 0px 6px 8px rgba(0, 0, 0, 0.6);
-	transition: all ease-in-out 150ms;
-  }
-  .wrapper a:nth-child(1) {
-	color: orange;
-  }
-  .wrapper a:nth-child(2) {
-	color: orange;
-  }
-  .wrapper a:nth-child(3) {
-	color: orange;
-  }
-  .wrapper i:hover {
-	margin-top: -3px;
-	text-shadow: 0px 14px 10px rgba(0, 0, 0, 0.4);
+
+.secret {
+    text-align: center;
+    color: #e24a36;
+    font-size: 28px;
 }
