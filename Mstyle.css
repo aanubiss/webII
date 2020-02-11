@@ -26,7 +26,7 @@ body {
     height: 80%;
     width: 210px;
     background: rgb(226, 54, 54);
-    background: radial-gradient(circle, rgba(226, 54, 54, 1) 0%, rgba(226, 74, 54, 1) 48%, rgba(226, 54, 54, 1) 100%);
+    background: radial-gradient(circle, rgb(226, 54, 54) 0%, rgb(226, 74, 54) 50%, rgb(226, 54, 54) 100%);
     border: 1px solid goldenrod;
     border-radius: 10px;
     transition: 700ms;
@@ -74,6 +74,6 @@ body {
 
 .secret {
     text-align: center;
-    color: #e24a36;
+    color: rgb(226, 54, 54);
     font-size: 28px;
 }
